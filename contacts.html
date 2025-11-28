@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - HoopKicks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contacts.css">
+</head>
+<body>
+    <!-- Верхняя полоса с акцией -->
+    <div class="top-bar">
+        🔥 Скидка 20% на все новинки! Используйте код: HOOP20
+    </div>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">🏀 HoopKicks</a>
+            <nav>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="profile.html" title="Личный кабинет">👤</a>
+                <a href="cart.html" title="Корзина">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a> / <span>Контакты</span>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="contacts-container">
+        <div class="container">
+            <!-- Заголовок страницы -->
+            <div class="contacts-header">
+                <h1>Контакты</h1>
+                <p class="contacts-subtitle">Свяжитесь с нами любым удобным способом</p>
+            </div>
+
+            <!-- Основная содержимое -->
+            <div class="contacts-content">
+                <!-- Информация о контактах -->
+                <aside class="contacts-info">
+                    <!-- Адрес -->
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Адрес</h3>
+                            <p>Москва, ул. Спортивная, 15</p>
+                            <p class="small-text">ТЦ "Спорт-Плаза", 3-й этаж</p>
+                        </div>
+                    </div>
+
+                    <!-- Телефон -->
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+                            <p class="small-text">Пн-Пт: 10:00 - 20:00</p>
+                            <p class="small-text">Сб-Вс: 11:00 - 19:00</p>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@hoopkicks.com">info@hoopkicks.com</a></p>
+                            <p class="small-text">Ответим в течение 24 часов</p>
+                        </div>
+                    </div>
+
+                    <!-- Время работы -->
+                    <div class="contact-card">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h3>Время работы</h3>
+                            <p class="small-text">Понедельник - Пятница: 10:00 - 20:00</p>
+                            <p class="small-text">Суббота: 11:00 - 19:00</p>
+                            <p class="small-text">Воскресенье: 11:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <!-- Социальные сети -->
+                    <div class="contact-card">
+                        <div class="contact-icon">🤝</div>
+                        <div class="contact-details">
+                            <h3>Мы в социальных сетях</h3>
+                            <div class="social-links-contacts">
+                                <a href="#" title="Facebook">📘</a>
+                                <a href="#" title="Instagram">📷</a>
+                                <a href="#" title="Twitter">🐦</a>
+                                <a href="#" title="YouTube">▶️</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Форма обратной связи -->
+                <main class="contacts-form-section">
+                    <div class="form-card">
+                        <h2>Форма обратной связи</h2>
+                        <p class="form-subtitle">Заполните форму, и наши специалисты свяжутся с вами в ближайшее время</p>
+
+                        <form class="contacts-form" action="#" method="POST">
+                            <!-- Имя -->
+                            <div class="form-group">
+                                <label for="name">Ваше имя <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+
+                            <!-- Телефон -->
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+                            </div>
+
+                            <!-- Тема -->
+                            <div class="form-group">
+                                <label for="subject">Тема обращения <span class="required">*</span></label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Выберите тему</option>
+                                    <option value="order">Вопрос о заказе</option>
+                                    <option value="product">Вопрос о товаре</option>
+                                    <option value="delivery">Доставка и оплата</option>
+                                    <option value="return">Возврат товара</option>
+                                    <option value="feedback">Общее пожелание</option>
+                                    <option value="other">Другое</option>
+                                </select>
+                            </div>
+
+                            <!-- Сообщение -->
+                            <div class="form-group">
+                                <label for="message">Ваше сообщение <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" placeholder="Напишите ваше сообщение здесь..." required></textarea>
+                            </div>
+
+                            <!-- Согласие на обработку данных -->
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">Я согласен с <a href="#">политикой конфиденциальности</a></label>
+                            </div>
+
+                            <!-- Кнопка отправки -->
+                            <button type="submit" class="submit-btn">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </main>
+            </div>
+
+            <!-- Карта -->
+            <div class="map-section">
+                <h2>Наше местоположение</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.1234567890!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5c5c5c5c5d%3A0x1234567890abcdef!2sHoopKicks!5e0!3m2!1sru!2sru!4v1234567890" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <div class="faq-section">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>❓ Как получить скидку?</h3>
+                        <p>Используйте промо-код HOOP20 при оформлении заказа и получайте скидку 20% на все новинки.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>📦 Какие способы доставки?</h3>
+                        <p>Мы доставляем по всей России курьерскими службами, почтой и в пункты самовывоза за 1-5 рабочих дней.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>💰 Какие способы оплаты?</h3>
+                        <p>Принимаем все популярные способы оплаты: карты, электронные кошельки, банковский перевод и наличные при доставке.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>↩️ Как вернуть товар?</h3>
+                        <p>При необходимости возврата - свяжитесь с нами в течение 14 дней после получения. Мы поможем организовать обратную доставку.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О компании</h3>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Покупателям</h3>
+                <ul>
+                    <li><a href="catalog.html">Каталог товаров</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Возврат товара</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Личный кабинет</h3>
+                <ul>
+                    <li><a href="profile.html">Мой профиль</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="checkout.html">Оформление заказа</a></li>
+                    <li><a href="#">История заказов</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                    <a href="#">▶️</a>
+                </div>
+                <p style="margin-top: 20px; color: #ccc;">
+                    Email: info@hoopkicks.com<br>
+                    Телефон: +7 (999) 123-45-67
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HoopKicks. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>

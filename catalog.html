@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - HoopKicks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+    <!-- Верхняя полоса с акцией -->
+    <div class="top-bar">
+        🔥 Скидка 20% на все новинки! Используйте код: HOOP20
+    </div>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">🏀 HoopKicks</a>
+            <nav>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="profile.html" title="Личный кабинет">👤</a>
+                <a href="cart.html" title="Корзина">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a> / <span>Каталог</span>
+        </div>
+    </div>
+
+    <!-- Основной контент каталога -->
+    <div class="catalog-container">
+        <!-- Боковая панель с фильтрами -->
+        <aside class="filters-sidebar">
+            <h2>Фильтры</h2>
+
+            <!-- Категории -->
+            <div class="filter-group">
+                <h3>Категория</h3>
+                <label class="filter-option">
+                    <input type="checkbox" name="category" value="sneakers">
+                    <span>Кроссовки</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="category" value="accessories">
+                    <span>Аксессуары</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="category" value="collections">
+                    <span>Коллекции</span>
+                </label>
+            </div>
+
+            <!-- Бренды -->
+            <div class="filter-group">
+                <h3>Бренд</h3>
+                <label class="filter-option">
+                    <input type="checkbox" name="brand" value="nike">
+                    <span>Nike</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="brand" value="adidas">
+                    <span>Adidas</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="brand" value="jordan">
+                    <span>Jordan</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="brand" value="under-armour">
+                    <span>Under Armour</span>
+                </label>
+                <label class="filter-option">
+                    <input type="checkbox" name="brand" value="puma">
+                    <span>Puma</span>
+                </label>
+            </div>
+
+            <!-- Размеры -->
+            <div class="filter-group">
+                <h3>Размер</h3>
+                <div class="size-grid">
+                    <label class="size-option">
+                        <input type="checkbox" name="size" value="40">
+                        <span>40</span>
+                    </label>
+                    <label class="size-option">
+                        <input type="checkbox" name="size" value="41">
+                        <span>41</span>
+                    </label>
+                    <label class="size-option">
+                        <input type="checkbox" name="size" value="42">
+                        <span>42</span>
+                    </label>
+                    <label class="size-option">
+                        <input type="checkbox" name="size" value="43">
+                        <span>43</span>
+                    </label>
+                    <label class="size-option">
+                        <input type="checkbox" name="size" value="44">
+                        <span>44</span>
+                    </label>
+                    <label class="size-option">
+                        <input type="checkbox" name="size" value="45">
+                        <span>45</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Ценовой диапазон -->
+            <div class="filter-group">
+                <h3>Цена</h3>
+                <div class="price-inputs">
+                    <input type="number" placeholder="От" min="0" value="0">
+                    <span>—</span>
+                    <input type="number" placeholder="До" min="0" value="30000">
+                </div>
+                <input type="range" min="0" max="30000" value="30000" class="price-slider">
+            </div>
+
+            <!-- Цвет -->
+            <div class="filter-group">
+                <h3>Цвет</h3>
+                <div class="color-grid">
+                    <label class="color-option" style="background: #000;" title="Черный">
+                        <input type="checkbox" name="color" value="black">
+                    </label>
+                    <label class="color-option" style="background: #fff; border: 1px solid #ddd;" title="Белый">
+                        <input type="checkbox" name="color" value="white">
+                    </label>
+                    <label class="color-option" style="background: #ff0000;" title="Красный">
+                        <input type="checkbox" name="color" value="red">
+                    </label>
+                    <label class="color-option" style="background: #0066ff;" title="Синий">
+                        <input type="checkbox" name="color" value="blue">
+                    </label>
+                    <label class="color-option" style="background: #00aa00;" title="Зеленый">
+                        <input type="checkbox" name="color" value="green">
+                    </label>
+                    <label class="color-option" style="background: #888;" title="Серый">
+                        <input type="checkbox" name="color" value="gray">
+                    </label>
+                </div>
+            </div>
+
+            <button class="reset-filters">Сбросить фильтры</button>
+        </aside>
+
+        <!-- Основная область с товарами -->
+        <main class="catalog-main">
+            <!-- Заголовок и сортировка -->
+            <div class="catalog-header">
+                <h1>Каталог товаров</h1>
+                <div class="catalog-controls">
+                    <span class="results-count">Найдено товаров: 24</span>
+                    <select class="sort-select">
+                        <option value="popular">По популярности</option>
+                        <option value="price-asc">Сначала дешевые</option>
+                        <option value="price-desc">Сначала дорогие</option>
+                        <option value="new">Новинки</option>
+                        <option value="discount">Со скидкой</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Сетка товаров -->
+            <div class="catalog-grid">
+                <!-- Товар 1 -->
+                <a href="product.html?id=1" class="catalog-product-link">
+                    <div class="catalog-product-card">
+                        <div class="product-badge new">Новинка</div>
+                        <div class="product-image">
+                            <img src="images/nike_kd_18.avif" alt="Nike KD 18">
+                            <div class="product-hover-buttons">
+                                <button class="quick-view-btn" title="Быстрый просмотр" onclick="event.preventDefault(); event.stopPropagation();">👁️</button>
+                                <button class="add-to-cart-btn" title="В корзину" onclick="event.preventDefault(); event.stopPropagation();">🛒</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Nike KD 18</h3>
+                            <p class="product-brand">Nike</p>
+                            <div class="product-price">12 990 ₽</div>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐⭐ <span>(45)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Товар 2 -->
+                <a href="product.html?id=2" class="catalog-product-link">
+                    <div class="catalog-product-card">
+                        <div class="product-badge sale">-15%</div>
+                        <div class="product-image">
+                            <img src="images/cobe_4_elite.avif" alt="Cobe 4 Elite">
+                            <div class="product-hover-buttons">
+                                <button class="quick-view-btn" title="Быстрый просмотр" onclick="event.preventDefault(); event.stopPropagation();">👁️</button>
+                                <button class="add-to-cart-btn" title="В корзину" onclick="event.preventDefault(); event.stopPropagation();">🛒</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Cobe 4 Elite</h3>
+                            <p class="product-brand">Adidas</p>
+                            <div class="product-price">
+                                <span class="old-price">17 000 ₽</span>
+                                14 490 ₽
+                            </div>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐⭐ <span>(32)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Товар 3 -->
+                <a href="product.html?id=3" class="catalog-product-link">
+                    <div class="catalog-product-card">
+                        <div class="product-image">
+                            <img src="images/jordan_luka_.77.avif" alt="Jordan Luka 0.77">
+                            <div class="product-hover-buttons">
+                                <button class="quick-view-btn" title="Быстрый просмотр" onclick="event.preventDefault(); event.stopPropagation();">👁️</button>
+                                <button class="add-to-cart-btn" title="В корзину" onclick="event.preventDefault(); event.stopPropagation();">🛒</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Slam Dunk Legend</h3>
+                            <p class="product-brand">Jordan</p>
+                            <div class="product-price">15 990 ₽</div>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐⭐ <span>(58)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Товар 4 -->
+                <a href="product.html?id=4" class="catalog-product-link">
+                    <div class="catalog-product-card">
+                        <div class="product-badge new">Новинка</div>
+                        <div class="product-image">
+                            <img src="images/puma_hali_1.avif" alt="Puma Hali 1">
+                            <div class="product-hover-buttons">
+                                <button class="quick-view-btn" title="Быстрый просмотр" onclick="event.preventDefault(); event.stopPropagation();">👁️</button>
+                                <button class="add-to-cart-btn" title="В корзину" onclick="event.preventDefault(); event.stopPropagation();">🛒</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Speed Runner Pro</h3>
+                            <p class="product-brand">Under Armour</p>
+                            <div class="product-price">13 490 ₽</div>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(28)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Товар 5 -->
+                <a href="product.html?id=5" class="catalog-product-link">
+                    <div class="catalog-product-card">
+                        <div class="product-image">
+                            <img src="images/nike_kd_18.avif" alt="Nike KD 18">
+                            <div class="product-hover-buttons">
+                                <button class="quick-view-btn" title="Быстрый просмотр" onclick="event.preventDefault(); event.stopPropagation();">👁️</button>
+                                <button class="add-to-cart-btn" title="В корзину" onclick="event.preventDefault(); event.stopPropagation();">🛒</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Nike KD 18</h3>
+                            <p class="product-brand">Nike</p>
+                            <div class="product-price">16 990 ₽</div>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐⭐ <span>(41)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Товар 6 -->
+                <a href="product.html?id=6" class="catalog-product-link">
+                    <div class="catalog-product-card">
+                        <div class="product-badge sale">-20%</div>
+                        <div class="product-image">
+                            <img src="images/puma_hali_1.avif" alt="Puma Hali 1">
+                            <div class="product-hover-buttons">
+                                <button class="quick-view-btn" title="Быстрый просмотр" onclick="event.preventDefault(); event.stopPropagation();">👁️</button>
+                                <button class="add-to-cart-btn" title="В корзину" onclick="event.preventDefault(); event.stopPropagation();">🛒</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Puma Hali 1</h3>
+                            <p class="product-brand">Puma</p>
+                            <div class="product-price">
+                                <span class="old-price">14 990 ₽</span>
+                                11 990 ₽
+                            </div>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐☆ <span>(35)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Товар 7 -->
+                <a href="product.html?id=7" class="catalog-product-link">
+                    <div class="catalog-product-card">
+                        <div class="product-image">
+                            <img src="images/cobe_4_elite.avif" alt="Cobe 4 Elite">
+                            <div class="product-hover-buttons">
+                                <button class="quick-view-btn" title="Быстрый просмотр" onclick="event.preventDefault(); event.stopPropagation();">👁️</button>
+                                <button class="add-to-cart-btn" title="В корзину" onclick="event.preventDefault(); event.stopPropagation();">🛒</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Cobe 4 Elite</h3>
+                            <p class="product-brand">Adidas</p>
+                            <div class="product-price">18 990 ₽</div>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐⭐ <span>(52)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Товар 8 -->
+                <a href="product.html?id=8" class="catalog-product-link">
+                    <div class="catalog-product-card">
+                        <div class="product-image">
+                            <img src="images/jordan_luka_.77.avif" alt="Jordan Luka 0.77">
+                            <div class="product-hover-buttons">
+                                <button class="quick-view-btn" title="Быстрый просмотр" onclick="event.preventDefault(); event.stopPropagation();">👁️</button>
+                                <button class="add-to-cart-btn" title="В корзину" onclick="event.preventDefault(); event.stopPropagation();">🛒</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Jordan Luka 0.77</h3>
+                            <p class="product-brand">Jordan</p>
+                            <div class="product-price">19 990 ₽</div>
+                            <div class="product-rating">
+                                ⭐⭐⭐⭐⭐ <span>(67)</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Пагинация -->
+            <div class="pagination">
+                <a href="#" class="pagination-btn disabled">«</a>
+                <a href="#" class="pagination-btn active">1</a>
+                <a href="#" class="pagination-btn">2</a>
+                <a href="#" class="pagination-btn">3</a>
+                <a href="#" class="pagination-btn">4</a>
+                <a href="#" class="pagination-btn">»</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О компании</h3>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Покупателям</h3>
+                <ul>
+                    <li><a href="catalog.html">Каталог товаров</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Возврат товара</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Личный кабинет</h3>
+                <ul>
+                    <li><a href="profile.html">Мой профиль</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="checkout.html">Оформление заказа</a></li>
+                    <li><a href="#">История заказов</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                    <a href="#">▶️</a>
+                </div>
+                <p style="margin-top: 20px; color: #ccc;">
+                    Email: info@hoopkicks.com<br>
+                    Телефон: +7 (999) 123-45-67
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HoopKicks. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="catalog.js"></script>
+</body>
+</html>

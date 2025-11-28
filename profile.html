@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - HoopKicks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <!-- Верхняя полоса с акцией -->
+    <div class="top-bar">
+        🔥 Скидка 20% на все новинки! Используйте код: HOOP20
+    </div>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">🏀 HoopKicks</a>
+            <nav>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="profile.html" title="Личный кабинет">👤</a>
+                <a href="cart.html" title="Корзина">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a> / <span>Личный кабинет</span>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="profile-container">
+        <div class="container">
+            <!-- Заголовок страницы -->
+            <div class="profile-header">
+                <h1>Личный кабинет</h1>
+            </div>
+
+            <!-- Основное содержимое профиля -->
+            <div class="profile-content">
+                <!-- Боковая панель навигации -->
+                <aside class="profile-sidebar">
+                    <div class="profile-user-info">
+                        <div class="user-avatar">👤</div>
+                        <div class="user-details">
+                            <h3>Иван Петров</h3>
+                            <p>ivan.petrov@email.com</p>
+                        </div>
+                    </div>
+
+                    <nav class="profile-menu">
+                        <ul>
+                            <li><a href="#" class="menu-item active" data-section="orders">📦 Мои заказы</a></li>
+                            <li><a href="#" class="menu-item" data-section="favorites">❤️ Избранное</a></li>
+                            <li><a href="#" class="menu-item" data-section="personal">👤 Личные данные</a></li>
+                            <li><a href="#" class="menu-item" data-section="addresses">📍 Адреса доставки</a></li>
+                            <li><a href="#" class="menu-item" data-section="payments">💳 Способы оплаты</a></li>
+                            <li><a href="#" class="menu-item" data-section="notifications">🔔 Уведомления</a></li>
+                            <li><a href="#" class="menu-item" data-section="security">🔐 Безопасность</a></li>
+                        </ul>
+                    </nav>
+
+                    <button class="logout-btn">Выход</button>
+                </aside>
+
+                <!-- Основная область профиля -->
+                <main class="profile-main">
+                    <!-- Секция: Мои заказы -->
+                    <section id="orders" class="profile-section active">
+                        <div class="section-header">
+                            <h2>Мои заказы</h2>
+                            <a href="catalog.html" class="new-order-link">Купить еще</a>
+                        </div>
+
+                        <div class="orders-list">
+                            <!-- Заказ 1 -->
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <div class="order-number">Заказ #12345</div>
+                                        <div class="order-date">10 ноября 2025</div>
+                                    </div>
+                                    <div class="order-status delivered">✓ Доставлено</div>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <span>Nike KD 18</span>
+                                        <span>12 990 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="order-footer">
+                                    <div class="order-total">
+                                        <strong>Итого:</strong>
+                                        <span>12 990 ₽</span>
+                                    </div>
+                                    <div class="order-actions">
+                                        <button class="order-action-btn">Повторить заказ</button>
+                                        <button class="order-action-btn">Оставить отзыв</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Заказ 2 -->
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <div class="order-number">Заказ #12344</div>
+                                        <div class="order-date">5 ноября 2025</div>
+                                    </div>
+                                    <div class="order-status in-transit">🚚 В пути</div>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <span>Jordan Luka 0.77</span>
+                                        <span>15 990 ₽</span>
+                                    </div>
+                                    <div class="order-item">
+                                        <span>Puma Hali 1</span>
+                                        <span>14 490 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="order-footer">
+                                    <div class="order-total">
+                                        <strong>Итого:</strong>
+                                        <span>30 480 ₽</span>
+                                    </div>
+                                    <div class="order-actions">
+                                        <button class="order-action-btn">Отследить</button>
+                                        <button class="order-action-btn">Отменить</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Заказ 3 -->
+                            <div class="order-card">
+                                <div class="order-header">
+                                    <div class="order-info">
+                                        <div class="order-number">Заказ #12343</div>
+                                        <div class="order-date">1 ноября 2025</div>
+                                    </div>
+                                    <div class="order-status delivered">✓ Доставлено</div>
+                                </div>
+                                <div class="order-items">
+                                    <div class="order-item">
+                                        <span>Cobe 4 Elite</span>
+                                        <span>14 490 ₽</span>
+                                    </div>
+                                </div>
+                                <div class="order-footer">
+                                    <div class="order-total">
+                                        <strong>Итого:</strong>
+                                        <span>14 490 ₽</span>
+                                    </div>
+                                    <div class="order-actions">
+                                        <button class="order-action-btn">Повторить заказ</button>
+                                        <button class="order-action-btn">Оставить отзыв</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Секция: Избранное -->
+                    <section id="favorites" class="profile-section">
+                        <h2>Избранное</h2>
+                        <div class="favorites-grid" id="favorites-grid">
+                            <!-- Товары будут загружены из localStorage -->
+                        </div>
+                    </section>
+
+                    <!-- Секция: Личные данные -->
+                    <section id="personal" class="profile-section">
+                        <h2>Личные данные</h2>
+                        <form class="profile-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="first-name">Имя</label>
+                                    <input type="text" id="first-name" value="Иван">
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Фамилия</label>
+                                    <input type="text" id="last-name" value="Петров">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" value="ivan.petrov@email.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" value="+7 (999) 123-45-67">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="birthday">Дата рождения</label>
+                                <input type="date" id="birthday" value="1990-05-15">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gender">Пол</label>
+                                <select id="gender">
+                                    <option value="">Выберите</option>
+                                    <option value="male" selected>Мужской</option>
+                                    <option value="female">Женский</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="save-btn">Сохранить изменения</button>
+                        </form>
+                    </section>
+
+                    <!-- Секция: Адреса доставки -->
+                    <section id="addresses" class="profile-section">
+                        <div class="section-header">
+                            <h2>Адреса доставки</h2>
+                            <button class="add-new-btn">+ Добавить адрес</button>
+                        </div>
+
+                        <div class="addresses-list">
+                            <div class="address-card primary">
+                                <div class="address-header">
+                                    <h3>Москва (основной адрес)</h3>
+                                    <span class="primary-badge">Основной</span>
+                                </div>
+                                <p>ул. Ленина, д. 15, кв. 42</p>
+                                <p>119991, Москва</p>
+                                <p class="phone">+7 (999) 123-45-67</p>
+                                <div class="address-actions">
+                                    <button class="edit-btn">Редактировать</button>
+                                    <button class="delete-btn">Удалить</button>
+                                </div>
+                            </div>
+
+                            <div class="address-card">
+                                <div class="address-header">
+                                    <h3>Офис</h3>
+                                </div>
+                                <p>ул. Спортивная, д. 15</p>
+                                <p>125000, Москва</p>
+                                <p class="phone">+7 (999) 123-45-67</p>
+                                <div class="address-actions">
+                                    <button class="edit-btn">Редактировать</button>
+                                    <button class="delete-btn">Удалить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Секция: Способы оплаты -->
+                    <section id="payments" class="profile-section">
+                        <div class="section-header">
+                            <h2>Способы оплаты</h2>
+                            <button class="add-new-btn">+ Добавить карту</button>
+                        </div>
+
+                        <div class="payments-list">
+                            <div class="payment-card primary">
+                                <div class="card-header">
+                                    <div class="card-type">💳 Visa</div>
+                                    <span class="primary-badge">По умолчанию</span>
+                                </div>
+                                <p class="card-number">**** **** **** 4242</p>
+                                <div class="card-expiry">
+                                    <span>Срок действия: 12/25</span>
+                                </div>
+                                <div class="payment-actions">
+                                    <button class="edit-btn">Редактировать</button>
+                                    <button class="delete-btn">Удалить</button>
+                                </div>
+                            </div>
+
+                            <div class="payment-card">
+                                <div class="card-header">
+                                    <div class="card-type">💳 MasterCard</div>
+                                </div>
+                                <p class="card-number">**** **** **** 8765</p>
+                                <div class="card-expiry">
+                                    <span>Срок действия: 08/26</span>
+                                </div>
+                                <div class="payment-actions">
+                                    <button class="edit-btn">Редактировать</button>
+                                    <button class="delete-btn">Удалить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Секция: Уведомления -->
+                    <section id="notifications" class="profile-section">
+                        <h2>Уведомления</h2>
+                        <div class="notifications-settings">
+                            <div class="notification-item">
+                                <div class="notification-info">
+                                    <h3>Уведомления о заказах</h3>
+                                    <p>Получайте уведомления об изменении статуса заказа</p>
+                                </div>
+                                <input type="checkbox" class="toggle-switch" checked>
+                            </div>
+
+                            <div class="notification-item">
+                                <div class="notification-info">
+                                    <h3>Маркетинговые предложения</h3>
+                                    <p>Получайте информацию о скидках и новых товарах</p>
+                                </div>
+                                <input type="checkbox" class="toggle-switch" checked>
+                            </div>
+
+                            <div class="notification-item">
+                                <div class="notification-info">
+                                    <h3>Уведомления о товарах</h3>
+                                    <p>Уведомления о поступлении товара на склад</p>
+                                </div>
+                                <input type="checkbox" class="toggle-switch">
+                            </div>
+
+                            <div class="notification-item">
+                                <div class="notification-info">
+                                    <h3>Email рассылка</h3>
+                                    <p>Еженедельные письма с интересными предложениями</p>
+                                </div>
+                                <input type="checkbox" class="toggle-switch" checked>
+                            </div>
+                        </div>
+                        <button class="save-btn">Сохранить настройки</button>
+                    </section>
+
+                    <!-- Секция: Безопасность -->
+                    <section id="security" class="profile-section">
+                        <h2>Безопасность</h2>
+                        
+                        <div class="security-block">
+                            <h3>Пароль</h3>
+                            <p>Последнее изменение пароля: 15 октября 2025</p>
+                            <button class="change-password-btn">Изменить пароль</button>
+                        </div>
+
+                        <div class="security-block">
+                            <h3>Двухфакторная аутентификация</h3>
+                            <p>Дополнительный уровень защиты вашего аккаунта</p>
+                            <button class="enable-2fa-btn">Включить</button>
+                        </div>
+
+                        <div class="security-block">
+                            <h3>Активные сессии</h3>
+                            <p>Управляйте активными сессиями на других устройствах</p>
+                            <div class="sessions-list">
+                                <div class="session-item">
+                                    <div class="session-info">
+                                        <strong>Chrome на Windows</strong>
+                                        <p>Последняя активность: сейчас</p>
+                                    </div>
+                                    <span class="current-badge">Текущая</span>
+                                </div>
+                                <div class="session-item">
+                                    <div class="session-info">
+                                        <strong>Safari на iPhone</strong>
+                                        <p>Последняя активность: 2 часа назад</p>
+                                    </div>
+                                    <button class="logout-session-btn">Выйти</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="security-block danger">
+                            <h3>Удалить аккаунт</h3>
+                            <p>Постоянное удаление вашего аккаунта и всех данных</p>
+                            <button class="delete-account-btn">Удалить аккаунт</button>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О компании</h3>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Покупателям</h3>
+                <ul>
+                    <li><a href="catalog.html">Каталог товаров</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Возврат товара</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Личный кабинет</h3>
+                <ul>
+                    <li><a href="profile.html">Мой профиль</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="checkout.html">Оформление заказа</a></li>
+                    <li><a href="#">История заказов</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                    <a href="#">▶️</a>
+                </div>
+                <p style="margin-top: 20px; color: #ccc;">
+                    Email: info@hoopkicks.com<br>
+                    Телефон: +7 (999) 123-45-67
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HoopKicks. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Jump Pro X - HoopKicks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <!-- Верхняя полоса с акцией -->
+    <div class="top-bar">
+        🔥 Скидка 20% на все новинки! Используйте код: HOOP20
+    </div>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">🏀 HoopKicks</a>
+            <nav>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="profile.html" title="Личный кабинет">👤</a>
+                <a href="cart.html" title="Корзина">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Хлебные крошки -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="index.html">Главная</a> / <a href="catalog.html">Каталог</a> / <span>Air Jump Pro X</span>
+        </div>
+    </div>
+
+    <!-- Основной контент товара -->
+    <div class="product-container">
+        <!-- Галерея изображений -->
+        <div class="product-gallery">
+            <div class="main-image product-main-image">
+                <img src="images/nike_kd_18.avif" alt="Nike KD 18" id="mainImage">
+                <div class="product-badge new">Новинка</div>
+            </div>
+            <div class="thumbnail-images">
+                <img src="images/nike_kd_18.avif" alt="Вид 1" class="thumbnail active" onclick="changeImage(this)">
+                <img src="images/cobe_4_elite.avif" alt="Вид 2" class="thumbnail" onclick="changeImage(this)">
+                <img src="images/jordan_luka_.77.avif" alt="Вид 3" class="thumbnail" onclick="changeImage(this)">
+                <img src="images/puma_hali_1.avif" alt="Вид 4" class="thumbnail" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <!-- Информация о товаре -->
+        <div class="product-details">
+            <h1>Nike KD 18</h1>
+            <div class="product-meta">
+                <div class="product-rating">
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                    <span class="reviews-count">(45 отзывов)</span>
+                </div>
+                <div class="product-code">Артикул: NK-KD-18-001</div>
+            </div>
+
+            <div class="product-price-block">
+                <div class="current-price product-main-price">12 990 ₽</div>
+                <div class="old-price">15 990 ₽</div>
+                <div class="discount-badge">-19%</div>
+            </div>
+
+            <div class="product-description">
+                <p>Инновационные баскетбольные кроссовки Nike KD 18 с улучшенной амортизацией и поддержкой голеностопа. Технология Air Cushion обеспечивает максимальный комфорт при верхних бросках и прыжках.</p>
+            </div>
+
+            <!-- Выбор цвета -->
+            <div class="product-option">
+                <h3>Цвет: <span id="selectedColor">Черный/Красный</span></h3>
+                <div class="color-selector">
+                    <label class="color-option-product selected" style="background: linear-gradient(135deg, #000 50%, #ff0000 50%);" title="Черный/Красный">
+                        <input type="radio" name="color" value="black-red" checked>
+                    </label>
+                    <label class="color-option-product" style="background: linear-gradient(135deg, #fff 50%, #0066ff 50%); border: 1px solid #ddd;" title="Белый/Синий">
+                        <input type="radio" name="color" value="white-blue">
+                    </label>
+                    <label class="color-option-product" style="background: #000;" title="Черный">
+                        <input type="radio" name="color" value="black">
+                    </label>
+                    <label class="color-option-product" style="background: #fff; border: 1px solid #ddd;" title="Белый">
+                        <input type="radio" name="color" value="white">
+                    </label>
+                </div>
+            </div>
+
+            <!-- Выбор размера -->
+            <div class="product-option">
+                <h3>Размер: <span id="selectedSize">Не выбран</span></h3>
+                <div class="size-selector">
+                    <div class="size-option">40</div>
+                    <div class="size-option">41</div>
+                    <div class="size-option">42</div>
+                    <div class="size-option">43</div>
+                    <div class="size-option">44</div>
+                    <div class="size-option">45</div>
+                </div>
+                <a href="#" class="size-chart-btn">📏 Таблица размеров</a>
+            </div>
+
+            <!-- Количество -->
+            <div class="product-option">
+                <h3>Количество:</h3>
+                <div class="quantity-selector">
+                    <button class="qty-btn qty-minus">−</button>
+                    <input type="number" class="qty-product" value="1" min="1">
+                    <button class="qty-btn qty-plus">+</button>
+                </div>
+            </div>
+
+            <!-- Кнопки действий -->
+            <div class="product-actions">
+                <button class="add-to-cart-product-btn">🛒 Добавить в корзину</button>
+                <button class="buy-now-button">⚡ Купить сейчас</button>
+                <button class="add-to-favorites-btn" title="В избранное">🤍 Добавить в избранное</button>
+            </div>
+
+            <!-- Дополнительная информация -->
+            <div class="product-features">
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Бесплатная доставка от 5000 ₽</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Гарантия качества 1 год</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Возврат в течение 14 дней</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">✓</span>
+                    <span>Оригинальная продукция</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Табы с информацией -->
+    <div class="product-tabs-section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'description')">Описание</button>
+                <button class="tab-button" onclick="openTab(event, 'specifications')">Характеристики</button>
+                <button class="tab-button" onclick="openTab(event, 'reviews')">Отзывы (45)</button>
+                <button class="tab-button" onclick="openTab(event, 'delivery')">Доставка</button>
+            </div>
+
+            <div id="description" class="tab-content active">
+                <h2>Описание товара</h2>
+                <p>Air Jump Pro X — это профессиональные баскетбольные кроссовки, разработанные для максимальной производительности на площадке. Инновационная система амортизации Air Cushion обеспечивает отличное поглощение ударов при приземлениях и прыжках.</p>
+                <p>Верх кроссовок изготовлен из дышащего сетчатого материала с синтетическими накладками для дополнительной поддержки. Высокий воротник обеспечивает стабильность голеностопа, что особенно важно при резких движениях и сменах направления.</p>
+                <p>Подошва выполнена из прочной резины с улучшенным рисунком протектора, обеспечивающим превосходное сцепление на любой поверхности.</p>
+                <h3>Особенности:</h3>
+                <ul>
+                    <li>Технология Air Cushion для максимальной амортизации</li>
+                    <li>Дышащий сетчатый верх с синтетическими накладками</li>
+                    <li>Высокий воротник для поддержки голеностопа</li>
+                    <li>Резиновая подошва с улучшенным сцеплением</li>
+                    <li>Анатомическая стелька для комфорта</li>
+                    <li>Усиленный носок и пятка для долговечности</li>
+                </ul>
+            </div>
+
+            <div id="specifications" class="tab-content">
+                <h2>Характеристики</h2>
+                <table class="specs-table">
+                    <tr>
+                        <td>Бренд</td>
+                        <td>Nike</td>
+                    </tr>
+                    <tr>
+                        <td>Модель</td>
+                        <td>Air Jump Pro X</td>
+                    </tr>
+                    <tr>
+                        <td>Тип</td>
+                        <td>Баскетбольные кроссовки</td>
+                    </tr>
+                    <tr>
+                        <td>Пол</td>
+                        <td>Унисекс</td>
+                    </tr>
+                    <tr>
+                        <td>Материал верха</td>
+                        <td>Сетка, синтетика</td>
+                    </tr>
+                    <tr>
+                        <td>Материал подошвы</td>
+                        <td>Резина</td>
+                    </tr>
+                    <tr>
+                        <td>Технология амортизации</td>
+                        <td>Air Cushion</td>
+                    </tr>
+                    <tr>
+                        <td>Высота</td>
+                        <td>Высокие</td>
+                    </tr>
+                    <tr>
+                        <td>Вес (размер 42)</td>
+                        <td>380 г</td>
+                    </tr>
+                    <tr>
+                        <td>Страна производства</td>
+                        <td>Вьетнам</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="reviews" class="tab-content">
+                <h2>Отзывы покупателей</h2>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Алексей М.</span>
+                            <span class="review-date">15 ноября 2024</span>
+                        </div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-text">
+                        Отличные кроссовки! Очень удобные, отличная амортизация. Играю в них уже месяц, никаких нареканий. Размер соответствует.
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Дмитрий К.</span>
+                            <span class="review-date">10 ноября 2024</span>
+                        </div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-text">
+                        Лучшие кроссовки для баскетбола, которые у меня были! Голеностоп держат отлично, сцепление супер. Рекомендую!
+                    </div>
+                </div>
+
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <span class="reviewer-name">Михаил П.</span>
+                            <span class="review-date">5 ноября 2024</span>
+                        </div>
+                        <div class="review-rating">⭐⭐⭐⭐☆</div>
+                    </div>
+                    <div class="review-text">
+                        Хорошие кроссовки, но немного жестковаты первое время. После недели носки разносились и стало очень комфортно.
+                    </div>
+                </div>
+
+                <button class="load-more-reviews">Показать больше отзывов</button>
+            </div>
+
+            <div id="delivery" class="tab-content">
+                <h2>Доставка и оплата</h2>
+                <h3>Способы доставки:</h3>
+                <ul>
+                    <li><strong>Курьерская доставка по Москве</strong> — 1-2 дня, 300 ₽ (бесплатно от 5000 ₽)</li>
+                    <li><strong>Курьерская доставка по России</strong> — 3-7 дней, от 500 ₽</li>
+                    <li><strong>Пункты выдачи CDEK</strong> — 3-7 дней, от 250 ₽</li>
+                    <li><strong>Почта России</strong> — 7-14 дней, от 350 ₽</li>
+                </ul>
+                <h3>Способы оплаты:</h3>
+                <ul>
+                    <li>Банковские карты (Visa, MasterCard, МИР)</li>
+                    <li>Электронные кошельки (ЮMoney, QIWI)</li>
+                    <li>Наличными при получении (только для Москвы)</li>
+                    <li>Безналичный перевод для юридических лиц</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Похожие товары -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">Похожие товары</h2>
+            <div class="related-products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cobe_4_elite.avif" alt="Cobe 4 Elite">
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product.html?id=2">Cobe 4 Elite</a></h3>
+                        <p class="product-brand">Adidas</p>
+                        <div class="product-price">14 490 ₽</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/jordan_luka_.77.avif" alt="Jordan Luka 0.77">
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product.html?id=3">Jordan Luka 0.77</a></h3>
+                        <p class="product-brand">Jordan</p>
+                        <div class="product-price">15 990 ₽</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/puma_hali_1.avif" alt="Puma Hali 1">
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product.html?id=4">Puma Hali 1</a></h3>
+                        <p class="product-brand">Puma</p>
+                        <div class="product-price">13 490 ₽</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/nike_kd_18.avif" alt="Nike KD 18">
+                    </div>
+                    <div class="product-info">
+                        <h3><a href="product.html?id=5">Nike KD 18</a></h3>
+                        <p class="product-brand">Nike</p>
+                        <div class="product-price">16 990 ₽</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О компании</h3>
+                <ul>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">Новости</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Покупателям</h3>
+                <ul>
+                    <li><a href="catalog.html">Каталог товаров</a></li>
+                    <li><a href="#">Доставка и оплата</a></li>
+                    <li><a href="#">Возврат товара</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Личный кабинет</h3>
+                <ul>
+                    <li><a href="profile.html">Мой профиль</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="checkout.html">Оформление заказа</a></li>
+                    <li><a href="#">История заказов</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Мы в соцсетях</h3>
+                <div class="social-links">
+                    <a href="#">📘</a>
+                    <a href="#">📷</a>
+                    <a href="#">🐦</a>
+                    <a href="#">▶️</a>
+                </div>
+                <p style="margin-top: 20px; color: #ccc;">
+                    Email: info@hoopkicks.com<br>
+                    Телефон: +7 (999) 123-45-67
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 HoopKicks. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="product.js"></script>
+</body>
+</html>
